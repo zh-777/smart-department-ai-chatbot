@@ -29,10 +29,10 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", "dev-secret-change-me")
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-USERS_PATH = os.path.join(BASE_DIR, "teachers_users.csv")
-STATUS_PATH = os.path.join(BASE_DIR, "teacher_status.json")
-CSV_PATH = os.path.join(BASE_DIR, "CS_Department_Faculty.csv")
-FEE_CSV_PATH = os.path.join(BASE_DIR, "Approved_Fee_2025-26_parsed.csv")
+faculty_csv = os.path.join(BASE_DIR, "data", "CS_Department_Faculty.csv")
+fee_csv = os.path.join(BASE_DIR, "data", "Approved_Fee_2025-26_parsed.csv")
+users_csv = os.path.join(BASE_DIR, "data", "teachers_users.csv")
+status_json = os.path.join(BASE_DIR, "data", "teacher_status.json")
 
 OLLAMA_URL = "http://localhost:11434/api/chat"
 OLLAMA_MODEL = "qwen2.5:1.5b"
