@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Teacher Status</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-left">
+    <div class="logo">CS Assist</div>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/#assistant">Assistant</a>
+      <a href="/status">Live Status</a>
+      <a href="/#help">Help</a>
+    </nav>
+  </div>
+
+  <div class="nav-right">
+    <button id="btnTheme" class="btn small ghost" type="button" title="Toggle theme">🌗</button>
+    <span class="badge">CS Department</span>
+  </div>
+</header>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Live Teacher Status</h2>
+    <p>Green = In Office • Red = Away • Gray = Unknown</p>
+  </div>
+
+  <div class="status-actions">
+    <button id="btnRefreshStatus" class="btn ghost" type="button">Refresh</button>
+    <button id="btnOpenLogin" class="btn primary" type="button">Teacher Login</button>
+    <button id="btnLogout" class="btn ghost" type="button" style="display:none;">Logout</button>
+  </div>
+
+  <div id="statusToggleBar" class="status-toggle-bar hidden">
+    <div class="muted tiny">Your availability:</div>
+
+    <div class="seg-toggle" role="tablist" aria-label="Availability toggle">
+      <button id="toggleIn" class="seg-btn" type="button">🟢 In Office</button>
+      <button id="toggleAway" class="seg-btn" type="button">🔴 Away</button>
+    </div>
+
+    <div id="meLabel" class="muted tiny"></div>
+  </div>
+
+  <div class="table-wrap">
+    <table class="status-table">
+      <thead>
+        <tr>
+          <th>Teacher Name</th>
+          <th>Availability</th>
+          <th>Last Updated</th>
+        </tr>
+      </thead>
+      <tbody id="statusTbody">
+        <tr><td colspan="3" class="muted">Loading...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="loginModal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <div>
+          <div class="modal-title">Teacher Login</div>
+          <div class="modal-sub">Only teachers can update their own status</div>
+        </div>
+        <button id="btnCloseLogin" class="btn small ghost" type="button">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="field">
+          <label>Email</label>
+          <input id="loginEmail" type="email" placeholder="teacher@uaf.edu.pk" />
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input id="loginPassword" type="password" placeholder="••••••••" />
+        </div>
+
+        <div class="modal-actions">
+          <button id="btnDoLogin" class="btn primary" type="button">Login</button>
+          <div id="loginError" class="muted tiny"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>© 2026 CS Department Assistant</div>
+  <div class="muted">Live Availability • Teacher Login</div>
+</footer>
+
+<script src="/static/status.js"></script>
+</body>
+</html>

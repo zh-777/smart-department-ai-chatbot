@@ -1,0 +1,7 @@
+flask
+pandas
+requests
+beautifulsoup4
+lxml
+werkzeug
+google-generativeai

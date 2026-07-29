@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CS Department Assistant</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="logo">Smart Assistant</div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#assistant">Assistant</a>
+        <a href="/status">Live Status</a>
+        <a href="#help">Help</a>
+      </nav>
+    </div>
+
+    <div class="nav-right">
+      <button id="btnTheme" class="btn small ghost" type="button" title="Toggle theme">🌗</button>
+      <span class="badge">CS Department</span>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Smart CS Department Assistant</h1>
+      <p>
+        Ask anything about faculty, office floors, contact numbers, emails, specialization, fee structure,
+        or general academic questions. Faculty and fee answers are grounded in local CSV data. UAF-related
+        queries can use live website retrieval.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn primary" href="#assistant">Start Chat</a>
+        <a class="btn ghost" href="#help">Send Query</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="assistant" class="section">
+    <div class="section-head">
+      <h2>Assistant</h2>
+      <p>
+        Ask in English or simple Roman Urdu. Faculty answers come strictly from CSV.
+        Fee answers come strictly from fee CSV. General answers come from Ollama.
+      </p>
+    </div>
+
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-top">
+          <div>
+            <div class="sidebar-title">History</div>
+            <div class="sidebar-subtitle">This session</div>
+          </div>
+          <button id="btnNewChat" class="btn small ghost" type="button">New</button>
+        </div>
+        <div id="historyList" class="history-list"></div>
+      </aside>
+
+      <div class="chat-shell" id="chatShell">
+        <div class="chat-top">
+          <div class="status-dot"></div>
+          <div style="flex: 1;">
+            <div class="chat-title">CS Department Assistant</div>
+            <div class="chat-subtitle">Data-backed responses • No guessing</div>
+          </div>
+
+          <div class="chat-actions">
+            <button id="btnFullscreen" class="btn small ghost" type="button">Fullscreen</button>
+            <button id="btnToggleSidebar" class="btn small ghost" type="button">History</button>
+            <button id="btnClear" class="btn small ghost" type="button">Clear</button>
+          </div>
+        </div>
+
+        <div id="chatBox" class="chat-box" aria-live="polite"></div>
+
+        <div class="chat-input">
+          <button id="btnVoice" class="btn ghost" type="button" title="Voice input">🎤</button>
+          <input id="userInput" type="text" placeholder="Type your question... (e.g., 'Dr Akmal Rehan ka email?')" />
+          <button id="btnSend" class="btn primary" type="button">Send</button>
+        </div>
+
+        <div class="chat-hint">
+          Tip: Try keywords like <b>floor</b>, <b>email</b>, <b>office time</b>, <b>specialization</b>, <b>phone</b>, <b>fee</b>.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="help" class="section alt">
+    <div class="section-head">
+      <h2>Help / Contact</h2>
+      <p>Send your query to the department/admin email. This opens your email app with a pre-filled message.</p>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-grid">
+        <div class="field">
+          <label>Your Name</label>
+          <input id="helpName" type="text" placeholder="e.g., Ali Ahmad" />
+        </div>
+        <div class="field">
+          <label>Your Email (optional)</label>
+          <input id="helpEmail" type="email" placeholder="e.g., ali@gmail.com" />
+        </div>
+        <div class="field full">
+          <label>Your Message</label>
+          <textarea id="helpMsg" rows="5" placeholder="Write your question or issue..."></textarea>
+        </div>
+      </div>
+
+      <div class="contact-actions">
+        <button id="btnSendHelp" class="btn primary" type="button">Send Email</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>© 2026 CS Department Assistant</div>
+    <div class="muted">Final Year Project • Flask API • CSV Database • Ollama AI</div>
+  </footer>
+
+  <script src="/static/script.js?v=2"></script>
+</body>
+</html>

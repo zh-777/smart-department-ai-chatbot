@@ -1,0 +1,86 @@
+{
+  "akmalrehan@uaf.edu.pk": {
+    "status": "away",
+    "updated_at": "2026-05-13 13:27:57"
+  },
+  "hassan@uaf.edu.pk": {
+    "status": "in_office",
+    "updated_at": "2026-02-28 13:01:28"
+  },
+  "imranmumtaz@uaf.edu.pk": {
+    "status": "unknown",
+    "updated_at": ""
+  },
+  "mahsanlatif@uaf.edu.pk": {
+    "status": "unknown",
+    "updated_at": ""
+  },
+  "mazamzia@uaf.edu.pk": {
+    "status": "unknown",
+    "updated_at": ""
+  },
+  "milhankhan@uaf.edu.pk": {
+    "status": "unknown",
+    "updated_at": ""
+  },
+  "ahmedbuttar@uaf.edu.pk": {
+    "status": "unknown",
+    "updated_at": ""
+  },
+  "nayyariqbal@uaf.edu.pk": {
+    "status": "unknown",
+    "updated_at": ""
+  },
+  "qamar@uaf.edu.pk": {
+    "status": "unknown",
+    "updated_at": ""
+  },
+  "ctdm@uaf.edu.pk": {
+    "status": "in_office",
+    "updated_at": "2026-05-11 12:30:07"
+  },
+  "saqib@uaf.edu.pk": {
+    "status": "unknown",
+    "updated_at": ""
+  },
+  "sumaira.nishat@uaf.edu.pk": {
+    "status": "unknown",
+    "updated_at": ""
+  },
+  "mushhad@uaf.edu.pk": {
+    "status": "unknown",
+    "updated_at": ""
+  },
+  "ahsan_raza@uaf.edu.pk": {
+    "status": "unknown",
+    "updated_at": ""
+  },
+  "kareem.ullah@uaf.edu.pk": {
+    "status": "unknown",
+    "updated_at": ""
+  },
+  "zeeshan.asaf@uaf.edu.pk": {
+    "status": "unknown",
+    "updated_at": ""
+  },
+  "anam.khalid@uaf.edu.pk": {
+    "status": "unknown",
+    "updated_at": ""
+  },
+  "nabeela.ashraf@uaf.edu.pk": {
+    "status": "unknown",
+    "updated_at": ""
+  },
+  "raheela.nasim@uaf.edu.pk": {
+    "status": "unknown",
+    "updated_at": ""
+  },
+  "sidra.shahid@uaf.edu.pk": {
+    "status": "unknown",
+    "updated_at": ""
+  },
+  "wajeeha.azmat@uaf.edu.pk": {
+    "status": "unknown",
+    "updated_at": ""
+  }
+}
