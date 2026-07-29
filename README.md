@@ -62,7 +62,7 @@ smart-department-information-assistant/
 ├── README.md
 ├── app.py
 ├── requirements.txt
-└── uaf_live.py
+└── faculty_status_updater.py
 ```
 
 ---
